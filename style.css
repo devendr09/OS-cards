@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: linear-gradient(rgb(255, 178, 228),rgb(255, 145, 145));
+    min-height: 100vh;
+}
+header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    text-align: center;
+    width: 330px;
+    min-height: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                  5px 5px 5px rgba(0, 0, 0, 0.05),
+                 -5px -5px 5px rgba(255, 255, 255, 0.5);
+}
+.content{
+    position: relative;
+}
+img{
+    width: 300px;
+    height: 160px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.1),
+                -5px -2px 20px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    z-index: 1;
+}
+p{
+    visibility: hidden;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+a{
+    display: inline-block;
+    margin-top: 15px;
+    width: 110px;
+    background: rgb(255, 91, 127);
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: cornsilk;
+    padding: 3px;
+}
+.card:hover img{
+    transform: translateY(-100px);
+    transition: 0.5s;
+}
+.card:hover{
+    padding-bottom: 130px;
+    transition: 0.5s;
+}
+.card:hover a{
+    margin-top: 30px;
+}
+.card:hover p{
+    visibility: visible;
+    transform: translateY(190px);
+    transition: 0.5s 0.15s;
+}
+footer{
+    text-align: center;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:1200px){
+    .container{
+        margin-top: 50px;
+    }
+    .card{
+        margin-bottom: 50px;
+    }
+}
