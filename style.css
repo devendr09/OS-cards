@@ -37,6 +37,7 @@ header{
                 inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                   5px 5px 5px rgba(0, 0, 0, 0.05),
                  -5px -5px 5px rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
 }
 .content{
     position: relative;
@@ -54,12 +55,14 @@ img{
     bottom: 1px;
     left: 2px;
     z-index: 1;
+    transition: 0.3s;
 }
 p{
     visibility: hidden;
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
+    transition: 0.1s;
     /* word-spacing: 3px;
     font-weight: 600; */
     
@@ -95,6 +98,11 @@ a{
 footer{
     text-align: center;
     margin-bottom: 40px;
+}
+@media screen and (max-width:360px){
+    .card:hover .windows a {
+        padding-bottom: 50px;
+    }
 }
 @media screen and (max-width:1200px){
     .container{
