@@ -4,7 +4,8 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background: linear-gradient(rgb(255, 178, 228),rgb(255, 145, 145));
+    /* background: linear-gradient(rgb(255, 178, 228),rgb(255, 145, 145)); */
+    background: linear-gradient(rgb(255, 145, 145),#E93B81);
     min-height: 100vh;
 }
 header{
@@ -59,12 +60,16 @@ p{
     text-align: center;
     line-height: 1.5;
     font-size: 18px;
+    /* word-spacing: 3px;
+    font-weight: 600; */
+    
 }
 a{
     display: inline-block;
     margin-top: 15px;
     width: 110px;
-    background: rgb(255, 91, 127);
+    /* background: rgb(255, 91, 127); */
+    background: #BA135D;
     border-radius: 15px;
     text-decoration: none;
     text-align: center;
